@@ -1,11 +1,11 @@
+import model.CustomExceptions;
 import model.Identification;
 
 public class Main {
     public static void main(String[] args) {
         String input = "  Великонский Константин    Валерьевич 31.03.1973  79642953102 m ";
-        input = Identification.removingExtraSpaces(input);
+        input = CustomExceptions.IncorrectAmountDataEntered(input);
         int count = Identification.substringCount(input);
-        System.out.println(input + " " + count);
         if (count == 6){
             String str = Identification.searchName(input);
             String str2 = Identification.searchData(input);
