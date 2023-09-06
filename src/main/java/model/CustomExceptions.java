@@ -1,6 +1,6 @@
 package model;
 
-public class CustomExceptions {
+public class CustomExceptions extends Throwable {
 
     /**
      * Проверка количества введённых данных
@@ -36,7 +36,7 @@ public class CustomExceptions {
         }catch (Exception ex){
             System.out.println(ex.getMessage());
         }
-        return input;
+        return "";
     }
 
     /**
@@ -54,7 +54,7 @@ public class CustomExceptions {
         }catch (Exception ex){
             System.out.println(ex.getMessage());
         }
-        return input;
+        return "";
     }
 
     /**
@@ -74,7 +74,7 @@ public class CustomExceptions {
         }catch (Exception ex){
             System.out.println(ex.getMessage());
         }
-        return input;
+        return "";
     }
 
     /**
@@ -91,6 +91,6 @@ public class CustomExceptions {
         }catch (Exception ex){
             System.out.println(ex.getMessage());
         }
-        return input;
+        return "";
     }
 }

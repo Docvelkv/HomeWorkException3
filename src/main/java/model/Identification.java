@@ -48,7 +48,7 @@ public class Identification {
      */
     public static String searchData(String input){
         String data = "";
-        Pattern pattern = Pattern.compile("(?:[0-2][0-9]|3[01]).(?:0[0-9]|1[0-2]).[0-9]{4}");
+        Pattern pattern = Pattern.compile("(?:[0-2][0-9]|3[01])\\.(?:0[0-9]|1[0-2])\\.[0-9]{4}");
         Matcher matcher = pattern.matcher(input);
         while (matcher.find()){
             data = input.substring(matcher.start(), matcher.end());
